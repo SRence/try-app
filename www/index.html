@@ -1,0 +1,26 @@
+<html>
+<head>
+	
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta charset="utf-8">
+	<style>
+	body,html
+	.bg{background-image: url("logo.jpg"); background-position: center; background-repeat: no-repeat;background-size: cover; }
+</style>
+	<title>Simple Student List</title>
+</head>
+<body>
+<div class="container">
+	<form><center><h3>STUDENT LIST</h3>
+	<input type="number" placeholder="School ID" onfocus="this.value=''" id="name"><br/>
+	<input type="text" placeholder="Full Name" onfocus="this.value=''" id="pass"><br/>
+	<button id="add" onClick="window.location.reload();">Register</button>
+	<button id="ref" onClick="removeItem();" >Clear list</button>
+	<button id="load" onClick="window.location.reload();" >Refresh</button>
+	</form></center>
+<div id = "container">
+<ul class="list" id="list"></ul>
+</div>
+	<script src="index.js"></script>
+</body>
+</html>
